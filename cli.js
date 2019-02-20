@@ -19,4 +19,6 @@ if (!username) {
 	process.exit(1);
 }
 
-npmEmail(username).then(console.log);
+(async () => {
+	console.log(await npmEmail(username));
+})();

@@ -1,48 +1,45 @@
 {
-  "name": "npm-email-cli",
-  "version": "1.0.0",
-  "description": "Get the email of an npm user",
-  "license": "MIT",
-  "repository": "sindresorhus/npm-email-cli",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "bin": {
-    "npm-email": "cli.js"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "cli.js"
-  ],
-  "keywords": [
-    "cli-app",
-    "cli",
-    "npm",
-    "email",
-    "address",
-    "user",
-    "username",
-    "registry",
-    "json",
-    "get"
-  ],
-  "dependencies": {
-    "meow": "^3.7.0",
-    "npm-email": "^2.0.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "execa": "^0.4.0",
-    "xo": "*"
-  },
-  "xo": {
-    "esnext": true
-  }
+	"name": "npm-email-cli",
+	"version": "1.0.0",
+	"description": "Get the email of an npm user",
+	"license": "MIT",
+	"repository": "sindresorhus/npm-email-cli",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"bin": {
+		"npm-email": "cli.js"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"cli.js"
+	],
+	"keywords": [
+		"cli-app",
+		"cli",
+		"npm",
+		"email",
+		"address",
+		"user",
+		"username",
+		"registry",
+		"json",
+		"get"
+	],
+	"dependencies": {
+		"meow": "^5.0.0",
+		"npm-email": "^3.0.0"
+	},
+	"devDependencies": {
+		"ava": "^1.2.1",
+		"execa": "^1.0.0",
+		"xo": "^0.24.0"
+	}
 }
