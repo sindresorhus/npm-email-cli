@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-'use strict';
-const meow = require('meow');
-const npmEmail = require('npm-email');
+import process from 'node:process';
+import meow from 'meow';
+import npmEmail from 'npm-email';
 
 const cli = meow(`
 	Usage
@@ -10,15 +10,22 @@ const cli = meow(`
 	Example
 	  $ npm-email sindresorhus
 	  sindresorhus@gmail.com
-`);
+`, {
+	importMeta: import.meta,
+});
 
-const username = cli.input[0];
+const [username] = cli.input;
 
 if (!username) {
-	console.error('Specify an npm username');
+	console.error('Specify a npm username');
 	process.exit(1);
 }
 
-(async () => {
-	console.log(await npmEmail(username));
-})();
+const email = await npmEmail(username);
+
+if (!email) {
+	console.error('Could not find either user or email');
+	process.exit(2);
+}
+
+console.log(email);
