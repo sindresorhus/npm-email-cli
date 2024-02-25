@@ -15,7 +15,7 @@
 		"npm-email": "./cli.js"
 	},
 	"engines": {
-		"node": ">=14.18.0"
+		"node": ">=18"
 	},
 	"scripts": {
 		"test": "xo && ava"
@@ -36,12 +36,12 @@
 		"get"
 	],
 	"dependencies": {
-		"meow": "^10.1.2",
+		"meow": "^13.2.0",
 		"npm-email": "^4.0.0"
 	},
 	"devDependencies": {
-		"ava": "^4.0.1",
-		"execa": "^6.1.0",
-		"xo": "^0.48.0"
+		"ava": "^6.1.1",
+		"execa": "^8.0.1",
+		"xo": "^0.57.0"
 	}
 }
