@@ -1,6 +1,6 @@
 {
 	"name": "npm-email-cli",
-	"version": "3.0.0",
+	"version": "4.0.0",
 	"description": "Get the email of an npm user",
 	"license": "MIT",
 	"repository": "sindresorhus/npm-email-cli",
